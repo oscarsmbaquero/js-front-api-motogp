@@ -1,0 +1,367 @@
+@import './custom';
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+html {
+
+  scroll-behavior: smooth;
+}
+body {
+  // background-image: url("../assets/fondo.jpg");
+  background-color: white   ;
+
+;
+ // font-family: "Lato", sans-serif;
+ font-family: "Lucida Console", "Courier New", monospace;
+ //font-family: Arial, Helvetica, sans-serif;
+
+}
+header {
+  top: 0;
+}
+//////////////////////////botones Breaking Bad y Better Call Saul///////////////////////////////#202223 
+.photos{
+    background-color: #202223;
+    display:flex;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 20px rgba(240, 227, 227, 0.19), 0 6px 6px rgba(236, 227, 227, 0.23);
+    .photos__button--pilots{
+
+    height: 10rem;
+    width: 10rem;
+    margin: 30px 30px 70px 30px;
+    background-image:url("../assets/pilots.jpg");
+    }
+    .photos__button--pilots:hover{
+
+      height: 10rem;
+      width: 10rem;
+      margin: 30px 30px 70px 30px;
+      background-color: white;
+      background-image:url("../assets/valentino.png");
+      transform: rotate(10deg);
+      transition-duration: 1s;
+      }
+      .photos__button--circuit{
+
+        height: 10rem;
+        width: 10rem;
+        margin: 30px 30px 70px 30px;
+        background-image:url("../assets/circuitos.motogp.png");
+        }
+        .photos__button--circuit:hover{
+    
+          height: 10rem;
+          width: 10rem;
+          margin: 30px 30px 70px 30px;
+          background-color: white;
+          background-image:url("../assets/circuito.jerez.png");
+          transform: rotate(10deg);
+          transition-duration: 1s;
+          }
+
+    .photos__button--better{
+      height: 10rem;
+      width: 10rem;
+      margin: 30px 30px 70px 30px;
+      background-image:url("../assets/motos.png");
+
+      }
+      .photos__button--better:hover{
+        height: 10rem;
+        width: 10rem;
+        margin: 30px 30px 70px 30px;
+        background-image:url("../assets/ducati.jpg");
+        transform: rotate(-8deg);
+        transition-duration: 1s;
+        }
+        .photos__button--calendary{
+          height: 10rem;
+          width: 10rem;
+          margin: 30px 30px 70px 30px;
+          background-image:url("../assets/calendario.png");
+    
+          }
+          .photos__button--calendary:hover{
+            height: 10rem;
+            width: 10rem;
+            margin: 30px 30px 70px 30px;
+            background-image:url("../assets/calendario.png");
+            transform: rotate(-8deg);
+            transition-duration: 1s;
+            }
+
+}
+///////////////////////end botones //////////////////////@at-root
+
+//Modifico  campo valor  del select
+.value-select{
+  // background-color: red;
+  color: $primary;
+  text-shadow: 1px 1px #fff;
+}
+
+//propiedades container detallado por id
+.details-container{
+  display:flex;
+  flex-direction: column;
+  height: 500px;
+  width: 750px;  
+  // padding: 10px;
+  // color:black;
+  // text-align: center;
+
+  .details-item{
+    list-style:georgian;
+    background-color: $primary;
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    color:black;
+    text-align: center;
+  }
+  .details-item__image__detail {
+    border-radius: 10%;
+    padding: 10px;
+    height: 280px;
+    margin-right: 3rem;
+  }
+  .details-h{
+    
+    width: 100%;
+    height: 100%;
+  }
+  .details-item__text{
+    
+    display:flex;
+     flex-direction: row;
+    padding: 15px;
+    color:black;
+    font-weight: bold;
+    // text-align: center;
+  }
+}
+.flex-item{
+  flex-direction: column;
+  padding: 10px;
+  color:black;
+  text-align: center;
+}
+.flex-item__text__random{
+  padding: 10px;
+  color:white;
+  text-align: center;
+}
+.flex-item-li{
+  list-style:none;
+  // border-radius: 15%;
+  margin: 1rem;
+  background-color: $primary;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.flex-item-li:hover{
+  border-radius: solid;
+  transform: rotate(8deg);
+  transition-duration: 1s;
+}
+.flex-item-image {
+  width: 100%;
+  align-items: center;
+  height: 200px;
+}
+.flex-item-li-detail{//mismos atributos que lista general pero sin transform rotate
+  list-style:none;
+  border-radius: 15%;
+  margin: 1rem;
+  background-color: $primary;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.flex-item-image-detail {
+  border-radius: 10%;
+  padding: 10px;
+  height: 280px;
+  width:280px;
+}
+.breaking-container{
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+// background-color: $primary;
+height: 100px;
+width: 100%;
+margin-bottom: 40px;
+// box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+
+      .breaking-container__button{
+        margin :20px 50px 50px 50px;
+        height: 2rem;
+        width: 6rem;
+        background-color:$primary;
+        // color:white;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 25%;
+        border-color: white;
+        border-bottom-left-radius: 3px;
+
+        &--modifier{
+          margin :20px 50px 50px 50px;
+          height: 2rem;
+          width: 6rem;
+          background-color:$secundary;
+          // color:white;
+          // border-width: 2px;
+          border-style: solid;
+          border-radius: 25%;
+          border-color: white;
+          border-bottom-left-radius: 3px;
+        }
+      }
+
+      .breaking-container__toggled{//renombrada es elementToBeToggled
+        display:none;
+        margin-top : 8rem;
+        display:flex;
+        flex-direction:row;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      .breaking-container__toggled__button{
+        flex-direction: row;
+        height: 2rem;
+        width: 6rem;
+        background-color:$primary;
+        margin: 10px 10px 5px 10px;
+        // color:white;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 25%;
+        border-color: white;
+        border-bottom-right-radius: 3px;
+      }
+  }
+.flex-container_wrap{
+  display:flex;
+  margin-top : 8rem ;
+  margin-left: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+////////////////////////////////////////////card///////////////////////////////////////////////////////////
+.flip-container {
+  background-color: transparent;
+  margin-top: 10rem;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin:0 auto;
+}
+
+.card {
+  margin: 10px 10px 10px 10px;
+  // border-width: 2px;
+  //border-style: solid;
+  // border-radius: 25%;
+  // border-color: $primary;
+  position: relative;
+  display:inline-block;
+  width: 90%;
+  height: 98%;
+  text-align: center;
+  transform-style: preserve-3d;
+  // margin: 30px 30px 30px 30px;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.card h3, .card p, .card h6 {
+  display:block;
+  color:white;
+}
+.card h5{
+  color:red;
+}
+/* GIRA HORIZONTAL */
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.front {
+  background-color: $primary;
+  color: white;
+  display: flex;
+}
+// .front-calendary{
+//   background-color: red;
+//   display:flex;
+//   flex-direction: column;
+
+// }
+
+.back {
+  background-color: #202223;
+  color: red;
+  /*transform: rotateX(180deg);*/
+  transform: rotateY(180deg);
+  text-align:center;
+}
+
+
+/////MEDIA QUERY//////////////////////Monospace
+@media screen and (max-width: 768px) {
+
+  .navigator-list {
+   flex-direction: column;
+   padding: 4rem;
+   box-shadow:0;
+  }
+  .photos{
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+  }
+  .breaking-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+  }
+  .breaking-container__toggled{
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+  }
+  .breaking-container__toggled{
+    flex-direction: column;
+  }
+  
+}
+
+
