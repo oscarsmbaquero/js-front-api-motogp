@@ -334,6 +334,12 @@ margin-bottom: 40px;
   text-align:center;
 }
 
+.card-header{
+
+background-color: $secondary;
+border-radius: 2px;
+}
+
 
 /////MEDIA QUERY//////////////////////Monospace
 @media screen and (max-width: 768px) {
